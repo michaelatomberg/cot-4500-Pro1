@@ -37,8 +37,10 @@ def BisectionMethod():
 
         if((f(left)<0 and f(p)>0) or (f(left)>0 and f(p)<0)):
             right=p;
+            return p;
         else:
             left=p;
+            return p;
 # Example of f function (can be any function)
 def f(x):
     return x**2 - 2;
@@ -66,7 +68,6 @@ def FixedPoint():
 def g(x):
     return x*x*x+4*x*x-10;
 point=FixedPoint();
-print("Fixed point: "+str(point)+"\n");
     
 
 # The Newton-Raphson method 
