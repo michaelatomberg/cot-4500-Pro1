@@ -21,6 +21,7 @@ def ApproximationAlgorithm():
         diff=math.fabs(x-y);
 
     print("\nConvergence after "+str(iter)+" iterations.\n");
+print("Approximation Algorithm\n");
 approx=ApproximationAlgorithm();
 
 
@@ -37,13 +38,13 @@ def BisectionMethod():
 
         if((f(left)<0 and f(p)>0) or (f(left)>0 and f(p)<0)):
             right=p;
-            return p;
         else:
             left=p;
-            return p;
+    return p;
 # Example of f function (can be any function)
 def f(x):
     return x**2 - 2;
+print("Bisection Method\n");
 root = BisectionMethod();
 print("Approximated root: "+str(root)+"\n");
 
@@ -67,6 +68,7 @@ def FixedPoint():
 # Example of g function (can be any function)
 def g(x):
     return x*x*x+4*x*x-10;
+print("Fixed Point\n");
 point=FixedPoint();
     
 
@@ -95,4 +97,5 @@ def f(x):
     return math.cos(x)-x;
 def f_deriv(x):
     return -math.sin(x)-1;
+print("Newton Raphson\n");
 newton=NewtonRaphson();
