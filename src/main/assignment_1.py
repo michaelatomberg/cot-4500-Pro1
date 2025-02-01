@@ -67,7 +67,7 @@ def FixedPoint():
     return;
 # Example of g function (can be any function)
 def g(x):
-    return x*x*x+4*x*x-10;
+    return (x+7)/4;
 print("Fixed Point\n");
 point=FixedPoint();
     
